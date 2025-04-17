@@ -48,4 +48,4 @@ WHERE
 
 
 ```
-![image2](https://github.com/SirSeoPro/11-05/blob/main/2.png)
+
