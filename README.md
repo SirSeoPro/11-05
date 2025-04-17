@@ -32,6 +32,7 @@ where date(p.payment_date) = '2005-07-30' and p.payment_date = r.rental_date and
 
 ```
 
+EXPLAIN ANALYZE
 SELECT DISTINCT 
   CONCAT(c.last_name, ' ', c.first_name) AS full_name,
   SUM(p.amount) OVER (PARTITION BY c.customer_id, f.title) AS total_amount
@@ -44,6 +45,7 @@ JOIN film f ON f.film_id = i.film_id
 WHERE 
   p.payment_date >= '2005-07-30 00:00:00'
   AND p.payment_date <  '2005-07-31 00:00:00';
+
 
 
 
