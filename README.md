@@ -47,7 +47,6 @@ WHERE
   AND p.payment_date <  '2005-07-31 00:00:00';
 
 
-
-
 ```
 
+![image3](https://github.com/SirSeoPro/11-05/blob/main/3.png)
